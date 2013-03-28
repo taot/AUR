@@ -1,0 +1,16 @@
+# Mainainer: Terry Tao <librakevin@gmail.com>
+pkgname=hadoop
+pkgver=1.1.2
+pkgrel=1
+pkgdesc="Hadoop"
+arch=('any')
+url="http://hadoop.apachee.org/"
+license=('Apache')
+depends=('jre7-openjdk')
+source=(http://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/common/$pkgname-$pkgver/$pkgname-$pkgver.tar.gz)
+package() {
+  mkdir -p $pkgdir/usr/local
+  mv $srcdir/$pkgname-$pkgver $pkgdir/usr/local
+}
+options=(!strip)
+md5sums=('5557aa1089ab9073d2a5c35c775cccad')
