@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=forking
-ExecStart=/usr/sbin/tincd --user=nobody --chroot --mlock --net=%i
+ExecStart=/usr/sbin/tincd --user=nobody --net=%i
 
 [Install]
 WantedBy=multi-user.target

@@ -1,6 +1,6 @@
 # Mainainer: Terry Tao <librakevin@gmail.com>
 pkgname=tinc-pre-systemd
-pkgver=1
+pkgver=1pre10
 pkgrel=1
 pkgdesc="systemd unit files for aur/tinc-pre"
 arch=('any')
@@ -13,5 +13,5 @@ package() {
   install -D -m644 "$srcdir/tincd@.service" "$pkgdir/usr/lib/systemd/system/tincd@.service"
   install -D -m644 "$srcdir/tincd.service" "$pkgdir/usr/lib/systemd/system/tincd.service"
 }
-md5sums=('74683d03e5377f6ee6a0267154e0fd4d'
-         'c134a274fb051c8e3d2003422f1d5e6a')
+md5sums=('f1ffa0d46a3d762a3b039575b9da0ff8'
+         '5d65691468b2b00253db42481536032e')

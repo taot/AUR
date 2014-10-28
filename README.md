@@ -17,4 +17,4 @@ makepkg -g >> PKGBUILD
 makepkg
 
 # Verify the package
-namcap namcap tinc-pre-systemd-1-1-any.pkg.tar.xz
+namcap tinc-pre-systemd-1-1-any.pkg.tar.xz
